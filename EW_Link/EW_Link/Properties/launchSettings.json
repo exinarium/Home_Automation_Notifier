@@ -1,0 +1,11 @@
+﻿{
+  "profiles": {
+    "EW_Link": {
+      "commandName": "Project",
+      "dotnetRunMessages": true,
+      "environmentVariables": {
+        "DOTNET_ENVIRONMENT": "Development"
+      }
+    }
+  }
+}

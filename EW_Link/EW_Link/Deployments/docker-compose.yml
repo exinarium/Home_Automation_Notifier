@@ -1,0 +1,18 @@
+﻿version: '3.7'
+
+services:
+    home_automation:
+        image: creativ360/development:ew-link1.0
+        deploy:
+            replicas: 1
+        restart: unless-stopped
+        stop_grace_period: 2m
+        networks:
+            host:
+        environment:
+            - 'ASPNETCORE_ENVIRONMENT=Production'
+            - 'TZ=Africa/Johannesburg'
+networks:
+    host:
+        external:
+            name: bridge
